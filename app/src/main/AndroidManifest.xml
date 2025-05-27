@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PuraVitsLab"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".views.HistorialPedidosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.ComunidadActivity"
+            android:exported="false" />
+        <activity android:name=".views.RegistroActivity" />
+        <activity android:name=".views.LoginActivity" />
+        <activity android:name=".views.PersonalizacionActivity" />
+        <activity android:name=".views.BeneficiosActivity" />
+        <activity android:name=".views.PerfilActivity" />
+        <activity android:name=".views.CarritoActivity" />
+        <activity android:name=".views.PasarelaPagoActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
